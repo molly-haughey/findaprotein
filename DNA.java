@@ -11,14 +11,11 @@ public class DNA {
     String dna = dna3;
     int start = dna.indexOf("ATG");
     int stop = dna.indexOf("TGA");
-    if ((dna.indexOf("ATG") == 0) && (dna.indexOf("TGA") == 12)) {
-    } if (start != -1 && stop != -1 && (stop-start) % 3 == 0) {
+    if (start != -1 && stop != -1 && (stop-start) % 3 == 0) {
       String protein = dna.substring(start, stop+3);
       System.out.println("Protein: " + protein);
     } else {
       System.out.println("No such protein");
-    }
-
+      }
   }
-
 }
